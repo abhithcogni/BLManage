@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     Layout = "~/Views/Shared/AdminUtility.cshtml";
 }
 <!DOCTYPE html>
@@ -15,47 +12,42 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="navbar-container"></div>
-
-    <div class="d-flex-page">
-        <div id="sidebar-container">
-        </div>
-        <div class="main-content">
-            <div class="form-container">
-                <h2>Create Loan Offerings</h2>
-                <form id="loanProductForm">
-                    <div class="mb-3">
-                        <label for="productName" class="form-label">Product Name</label>
-                        <input type="text" class="form-control" id="productName" name="productName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="interestRate" class="form-label">Interest Rate (%)</label>
-                        <input type="number" class="form-control" id="interestRate" name="interestRate" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="minAmount" class="form-label">Minimum Amount</label>
-                        <input type="number" class="form-control" id="minAmount" name="minAmount" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="maxAmount" class="form-label">Maximum Amount</label>
-                        <input type="number" class="form-control" id="maxAmount" name="maxAmount" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="tenure" class="form-label">Tenure (months)</label>
-                        <input type="number" class="form-control" id="tenure" name="tenure" required>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Add Loan Product</button>
-                    </div>
-                </form>
+    <div class="form-container">
+        <h2>Create Loan Offerings</h2>
+        <form id="loanProductForm">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
             </div>
-        </div>
+            <div class="mb-3">
+                <label for="interestRate" class="form-label">Interest Rate (%)</label>
+                <input type="number" class="form-control" id="interestRate" name="interestRate" required>
+            </div>
+            <div class="mb-3">
+                <label for="minAmount" class="form-label">Minimum Amount</label>
+                <input type="number" class="form-control" id="minAmount" name="minAmount" required>
+            </div>
+            <div class="mb-3">
+                <label for="maxAmount" class="form-label">Maximum Amount</label>
+                <input type="number" class="form-control" id="maxAmount" name="maxAmount" required>
+            </div>
+            <div class="mb-3">
+                <label for="tenure" class="form-label">Tenure (months)</label>
+                <input type="number" class="form-control" id="tenure" name="tenure" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Add Loan Product</button>
+            </div>
+        </form>
     </div>
 
     <script>
         $(document).ready(function () {
-            $("#navbar-container").load("navbarAdmin.html");
-            $("#sidebar-container").load("sidebar.html");
+            // The navbar and sidebar are now part of the layout,
+            // so we don't need to load them here again.
+
+            // Highlight the current page in the sidebar
+            $('#sidebar a[href="@Url.Action("AddLoanProduct", "Admin")]"').addClass('active');
 
             $('#loanProductForm').on('submit', function (event) {
                 event.preventDefault();
@@ -65,15 +57,16 @@
                 const maxAmount = $('#maxAmount').val();
                 const tenure = $('#tenure').val();
 
-                const newRow = `<tr>
-                    <td>${productName}</td>
-                    <td>${interestRate}</td>
-                    <td>${minAmount}</td>
-                    <td>${maxAmount}</td>
-                    <td>${tenure}</td>
-                </tr>`;
+                // For demonstration purposes, let's just log the data.
+                // In a real application, you would send this data to the server.
+                console.log('Product Name:', productName);
+                console.log('Interest Rate:', interestRate);
+                console.log('Minimum Amount:', minAmount);
+                console.log('Maximum Amount:', maxAmount);
+                console.log('Tenure:', tenure);
 
-                $('#loanProductsTable tbody').append(newRow);
+                // Optionally, you can redirect the user or display a success message here.
+                alert('Loan product added (data logged to console)');
                 $(this)[0].reset();
             });
         });

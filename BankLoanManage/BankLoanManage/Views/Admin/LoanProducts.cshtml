@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     Layout = "~/Views/Shared/AdminUtility.cshtml";
 }
 <!DOCTYPE html>
@@ -9,89 +6,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Loan Product</title>
+    <title>Loan Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="/static/css/adminNav.css">
     <style>
-
-
-        .main-content {
-            margin-left: 100px;
-            margin-right: 100px;
-            transition: margin-left 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .loan-products-container {
+            padding: 20px;
         }
 
-        .form-container {
+        .loan-products-table {
             width: 100%;
-            max-width: 600px; /* Set a max-width for the form */
         }
 
-        .container {
-            margin-top: 20px;
-        }
+            .loan-products-table th,
+            .loan-products-table td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+            .loan-products-table th {
+                background-color: #f8f9fa;
+            }
 
+        .edit-button {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
-    <div id="navbar-container"></div>
-
-    <div class="d-flex-page">
-        <div id="sidebar-container"></div>
-        <div class="container main-content">
-            <div class="form-container">
-                <h3>Loan Products</h3>
-                <table class="table table-bordered" id="loanProductsTable">
-                    <thead>
-                        <tr>
-                            <th>Product Name</th>
-                            <th>Interest Rate</th>
-                            <th>Minimum Amount</th>
-                            <th>Maximum Amount</th>
-                            <th>Tenure</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Home Loan</td>
-                            <td>6.5</td>
-                            <td>50000</td>
-                            <td>5000000</td>
-                            <td>240</td>
-                            <td><button class="btn btn-sm btn-warning edit-button">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <td>Car Loan</td>
-                            <td>7.2</td>
-                            <td>100000</td>
-                            <td>2000000</td>
-                            <td>60</td>
-                            <td><button class="btn btn-sm btn-warning edit-button">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <td>Personal Loan</td>
-                            <td>10.5</td>
-                            <td>5000</td>
-                            <td>500000</td>
-                            <td>36</td>
-                            <td><button class="btn btn-sm btn-warning edit-button">Edit</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="loan-products-container">
+        <h3>Loan Products</h3>
+        <table class="table table-bordered loan-products-table" id="loanProductsTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Interest Rate</th>
+                    <th>Minimum Amount</th>
+                    <th>Maximum Amount</th>
+                    <th>Tenure</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Home Loan</td>
+                    <td>6.5</td>
+                    <td>50000</td>
+                    <td>5000000</td>
+                    <td>240</td>
+                    <td><button class="btn btn-sm btn-warning edit-button" data-product="Home Loan">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>Car Loan</td>
+                    <td>7.2</td>
+                    <td>100000</td>
+                    <td>2000000</td>
+                    <td>60</td>
+                    <td><button class="btn btn-sm btn-warning edit-button" data-product="Car Loan">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>Personal Loan</td>
+                    <td>10.5</td>
+                    <td>5000</td>
+                    <td>500000</td>
+                    <td>36</td>
+                    <td><button class="btn btn-sm btn-warning edit-button" data-product="Personal Loan">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <!-- Add a modal for editing product details -->
     <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -103,7 +89,7 @@
                     <form id="editProductForm">
                         <div class="form-group">
                             <label for="editProductName">Product Name</label>
-                            <input type="text" class="form-control" id="editProductName" name="editProductName" required>
+                            <input type="text" class="form-control" id="editProductName" name="editProductName" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="editInterestRate">Interest Rate (%)</label>
@@ -131,16 +117,10 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#navbar-container").load("navbarAdmin.html");
-            $("#sidebar-container").load("sidebar.html");
-
-            $('#toggleSidebar').on('click', function () {
-                $('#sidebar').toggleClass('collapsed');
-            });
+            // Highlight the current page in the sidebar
+            $('#sidebar a[href="@Url.Action("LoanProducts", "Admin")]"').addClass('active');
 
             // Handle Edit button click
             $(document).on('click', '.edit-button', function () {
@@ -172,7 +152,6 @@
 
                 // Update the table row with new data
                 const row = $('#loanProductsTable tbody tr:has(td:contains("' + productName + '"))');
-                row.find('td:eq(0)').text(productName);
                 row.find('td:eq(1)').text(interestRate);
                 row.find('td:eq(2)').text(minAmount);
                 row.find('td:eq(3)').text(maxAmount);
@@ -182,19 +161,10 @@
                 $('#editProductModal').modal('hide');
 
                 // TODO: Save changes to the database via an API call
+                console.log('Updated Product:', productName, interestRate, minAmount, maxAmount, tenure);
             });
         });
     </script>
-    <script>
-        fetch('navbarAdmin.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-
-                // Optional: Run any JavaScript that depends on the navbar being loaded
-                // For example, initializing event listeners within the navbar
-            });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
