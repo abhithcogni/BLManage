@@ -2,9 +2,14 @@
 
 namespace BankLoanManage.Controllers
 {
-    public class Bankcontroller : Controller
-    {   
+    public class CustomerController : Controller
+    {
         public IActionResult CustomerDashBoard()
+        {
+            return View();
+        }
+
+        public IActionResult CustomerReport()
         {
             return View();
         }

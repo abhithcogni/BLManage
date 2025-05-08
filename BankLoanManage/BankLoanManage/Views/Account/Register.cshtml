@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Register Customer";
+    Layout = "~/Views/Shared/RegisterNav.cshtml";
+}
+
+<div class="container m-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="card mb-6 mx-auto shadow border-0">
+                <div class="text-center border-0 p-3"><h4>Register New Customer</h4></div>
+                <div class="card-body">
+                    <form id="customerForm" method="post" action="@Url.Action("CustomerDashBoard", "Customer")">
+                        <div class="row g-3">
+                            <div class="col-md-12 form-floating">
+                                <input type="text" class="form-control" id="floatingName" name="name" placeholder="Name" required>
+                                <label class="ms-2" for="floatingName">Name</label>
+                            </div>
+                            <div class="col-md-12 form-floating">
+                                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Email" required>
+                                <label class="ms-2" for="floatingEmail">Email</label>
+                            </div>
+                            <div class="col-md-12 form-floating">
+                                <input type="text" class="form-control" id="floatingPhone" name="phone" placeholder="Phone" required>
+                                <label class="ms-2" for="floatingPhone">Phone</label>
+                            </div>
+                            <div class="col-md-12 form-floating">
+                                <input type="text" class="form-control" id="floatingAddress" name="address" placeholder="Address" required>
+                                <label class="ms-2" for="floatingAddress">Address</label>
+                            </div>
+                        </div>
+                        <div class="m-3 text-center">
+                            <button type="submit" class="btn btn-dark w-25 py-2">Register</button>
+                        </div>
+                        <div class="text-center">
+                            <p>Have an account? <a href="@Url.Action("Login", "Account")">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

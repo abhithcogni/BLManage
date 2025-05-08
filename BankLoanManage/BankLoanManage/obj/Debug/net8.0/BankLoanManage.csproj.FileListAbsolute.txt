@@ -32,3 +32,38 @@ C:\Bank Loan Management VS\BankLoanManage\BankLoanManage\obj\Debug\net8.0\refint
 C:\Bank Loan Management VS\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.pdb
 C:\Bank Loan Management VS\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.genruntimeconfig.cache
 C:\Bank Loan Management VS\BankLoanManage\BankLoanManage\obj\Debug\net8.0\ref\BankLoanManage.dll
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\appsettings.Development.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\appsettings.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.staticwebassets.runtime.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.staticwebassets.endpoints.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.exe
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.deps.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.runtimeconfig.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.dll
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\bin\Debug\net8.0\BankLoanManage.pdb
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.AssemblyInfoInputs.cache
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.AssemblyInfo.cs
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.csproj.CoreCompileInputs.cache
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.MvcApplicationPartsAssemblyInfo.cache
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.RazorAssemblyInfo.cache
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.RazorAssemblyInfo.cs
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.sourcelink.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\scopedcss\bundle\BankLoanManage.styles.css
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\scopedcss\projectbundle\BankLoanManage.bundle.scp.css
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets.build.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets.development.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets\msbuild.BankLoanManage.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets\msbuild.BankLoanManage.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets\msbuild.build.BankLoanManage.props
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BankLoanManage.props
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BankLoanManage.props
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.dll
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\refint\BankLoanManage.dll
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.pdb
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\BankLoanManage.genruntimeconfig.cache
+C:\Project in VS\BLManage\BankLoanManage\BankLoanManage\obj\Debug\net8.0\ref\BankLoanManage.dll

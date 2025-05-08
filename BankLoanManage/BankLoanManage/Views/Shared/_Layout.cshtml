@@ -3,60 +3,95 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Pheonix Bank</title>
+    <title>@ViewData["Title"] - Phoenix Bank</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BankLoanManage.styles.css" asp-append-version="true" />
+    <style>
+        /* Custom styling for the profile dropdown card */
+        .profile-dropdown-card {
+            width: 280px; /* Adjust width as needed */
+            border-radius: 0.5rem; /* Softer corners */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+            .profile-dropdown-card .card-body {
+                padding: 1.5rem; /* More padding */
+            }
+
+            .profile-dropdown-card .profile-avatar {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 15px;
+                object-fit: cover; /* Ensures the image covers the area without distortion */
+            }
+
+            .profile-dropdown-card .user-info h6 {
+                margin-bottom: 0.25rem;
+                font-weight: 600;
+            }
+
+            .profile-dropdown-card .user-info p {
+                font-size: 0.875rem;
+                color: #6c757d; /* Bootstrap's secondary text color */
+                margin-bottom: 1rem;
+            }
+
+        .navbar-nav .dropdown-menu {
+            position: absolute; /* Ensures dropdown is positioned correctly */
+        }
+    </style>
 </head>
-<body>
+<body class="bg-light">
     <header>
         <nav class="navbar navbar-expand-lg bg-light shadow">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Phoenix Bank</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Phoenix Bank</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                    <li class="nav-item">
-                        <a href="loanApplication.html" class="btn btn-outline-dark me-2">Apply Loan</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link d-flex align-items-center" href="#" id="profileDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
-                                <path d="M16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15C14.2091 15 16 13.2091 16 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M5.07026 15C4.38958 13.8233 4 12.4571 4 11C4 6.58172 7.58172 3 12 3C16.4183 3 20 6.58172 20 11C20 12.4571 19.6104 13.8233 18.9297 15" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M18 21C18 17.6863 15.3137 15 12 15C8.68629 15 6 17.6863 6 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end profile-dropdown-card" aria-labelledby="profileDropdown">
-                            <li>
-                                <div class="card-body text-center">
-                                    <div class=" align-items-center d-flex">
-                                        <div class="user-info text-start">
-                                            <h6>John Doe</h6>
-                                            <p>john.doe@example.com</p>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a href="loanApplication.html" class="btn btn-outline-dark me-2">Apply Loan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d-flex align-items-center" href="#" id="profileDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
+                                    <path d="M16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15C14.2091 15 16 13.2091 16 11Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.07026 15C4.38958 13.8233 4 12.4571 4 11C4 6.58172 7.58172 3 12 3C16.4183 3 20 6.58172 20 11C20 12.4571 19.6104 13.8233 18.9297 15" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M18 21C18 17.6863 15.3137 15 12 15C8.68629 15 6 17.6863 6 21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end profile-dropdown-card" aria-labelledby="profileDropdown">
+                                <li>
+                                    <div class="card-body text-center">
+                                        <div class=" align-items-center d-flex">
+                                            <div class="user-info text-start">
+                                                <h6>John Doe</h6>
+                                                <p>john.doe@example.com</p>
+                                            </div>
+                                            <a href="customerUpdate.html" class="btn w-75"><img class="w-50" src="/static/img/pencil-square.svg" alt=""></a>
                                         </div>
-                                        <a href="customerUpdate.html" class="btn w-75"><img class="w-50" src="/static/img/pencil-square.svg" alt=""></a>
+                                        <div>
+                                            <a class="btn btn-outline-warning dropdown-item" href="kycDetails.html">KYC Details</a>
+                                            <a class="btn btn-outline-warning dropdown-item" href="status.html">Application Status</a>
+                                            <a class="btn btn-outline-warning dropdown-item" href="user_report.html">Statements</a>
+                                            <a class="btn btn-outline-danger dropdown-item" href="#">Logout</a>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <a class="btn btn-outline-warning dropdown-item" href="kycDetails.html">KYC Details</a>
-                                        <a class="btn btn-outline-warning dropdown-item" href="status.html">Application Status</a>
-                                        <a class="btn btn-outline-warning dropdown-item" href="user_report.html">Statements</a>
-                                        <a class="btn btn-outline-danger dropdown-item" href="#">Logout</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -66,7 +101,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - BankLoanManage - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - Phoenix Bank - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
