@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Module</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container justify-content-center align-items-center min-vh-100">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <header class="my-4 text-center">
+                    <h1>Loan Application</h1>
+                </header>
+                <main>
+                    <section id="loan-form" class="mb-4">
+                        <p>
+                            <h2>Apply for a Loan</h2>
+                        </p>
+                        <form id="loanApplicationForm">
+                            <div class="form-group">
+                                <label for="customerId">Customer ID:</label>
+                                <input type="text" class="form-control" id="customerId" name="customerId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loanProductName">Loan Product Name:</label>
+                                <select class="form-control" id="loanProductName" name="loanProductName" required>
+                                    <option value="" disabled selected>Select a loan product</option>
+                                    <option value="Personal Loan">Personal Loan</option>
+                                    <option value="Housing Loan">Housing Loan</option>
+                                    <option value="Gold Loan">Gold Loan</option>
+                                    <option value="Vehical Loan">Vehical Loan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="interestRate">Interest Rate (%):</label>
+                                <input type="number" class="form-control" id="interestRate" name="interestRate" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="loanAmount">Loan Amount:</label>
+                                <input type="number" class="form-control" id="loanAmount" name="loanAmount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tenure">Tenure (months):</label>
+                                <input type="number" class="form-control" id="tenure" name="tenure" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalAmount">Total Amount:</label>
+                                <input type="number" class="form-control" id="totalAmount" name="totalAmount" readonly>
+                            </div><center>
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </center>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+   
+   
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="~/js/user_report.js"></script>
+    }
+</body>
+</html>

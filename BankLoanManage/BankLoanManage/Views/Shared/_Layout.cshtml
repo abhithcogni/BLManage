@@ -57,7 +57,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                            <a href="loanApplication.html" class="btn btn-outline-dark me-2">Apply Loan</a>
+                            <a href="@Url.Action("LoanApplication", "Customer")" class="btn btn-outline-dark me-2">Apply Loan</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link d-flex align-items-center" href="#" id="profileDropdown" role="button"
@@ -79,10 +79,10 @@
                                             <a href="customerUpdate.html" class="btn w-75"><img class="w-50" src="/static/img/pencil-square.svg" alt=""></a>
                                         </div>
                                         <div>
-                                            <a class="btn btn-outline-warning dropdown-item" href="kycDetails.html">KYC Details</a>
-                                            <a class="btn btn-outline-warning dropdown-item" href="status.html">Application Status</a>
-                                            <a class="btn btn-outline-warning dropdown-item" href="user_report.html">Statements</a>
-                                            <a class="btn btn-outline-danger dropdown-item" href="#">Logout</a>
+                                            <a class="btn btn-outline-warning dropdown-item" href="@Url.Action("KYCUpdate", "Customer")">KYC Details</a>
+                                            <a class="btn btn-outline-warning dropdown-item" href="@Url.Action("LApplicationStatus","Customer")">Application Status</a>
+                                            <a class="btn btn-outline-warning dropdown-item" href="@Url.Action("CustomerReport", "Customer")">Statements</a>
+                                            <a class="btn btn-outline-danger dropdown-item" href="@Url.Action("Login", "Account")">Logout</a>
                                         </div>
                                     </div>
                                 </li>
