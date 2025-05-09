@@ -3,7 +3,227 @@
     Layout = "~/Views/Shared/_Layout.cshtml"; // Specify the layout page
 }
 
-<div class="container mt-4">
-    <h1>Welcome to Phoenix Bank</h1>
-    <p>Your trusted financial partner.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styling for the profile dropdown card */
+        .profile-dropdown-card {
+            width: 280px; /* Adjust width as needed */
+            border-radius: 0.5rem; /* Softer corners */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+            .profile-dropdown-card .card-body {
+                padding: 1.5rem; /* More padding */
+            }
+
+            .profile-dropdown-card .profile-avatar {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 15px;
+                object-fit: cover; /* Ensures the image covers the area without distortion */
+            }
+
+            .profile-dropdown-card .user-info h6 {
+                margin-bottom: 0.25rem;
+                font-weight: 600;
+            }
+
+            .profile-dropdown-card .user-info p {
+                font-size: 0.875rem;
+                color: #6c757d; /* Bootstrap's secondary text color */
+                margin-bottom: 1rem;
+            }
+
+        .navbar-nav .dropdown-menu {
+            position: absolute; /* Ensures dropdown is positioned correctly */
+        }
+
+        .loan-summary-card {
+            border-radius: 0.75rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px; /* Add some space below the summary */
+        }
+
+        .loan-summary-card-header {
+            background-color: #060708; /* Bootstrap primary color */
+            color: white;
+            border-radius: 0.75rem 0.75rem 0 0;
+            padding: 1.25rem;
+        }
+
+        .loan-summary-card-body {
+            padding: 1.5rem;
+        }
+
+        .loan-summary-details p {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div id="navbar-container"></div>
+
+    <div class="container mt-5">
+        <div class="card loan-summary-card">
+            <div class="card-header loan-summary-card-header bg-dark">
+                <h3 class="text-white">Loan Summary (Application ID: APP001)</h3>
+            </div>
+            <div class="card-body loan-summary-card-body">
+                <div class="loan-summary-details">
+                    <p><strong>Loan Amount:</strong> $<span id="loanAmountDisplay"></span></p>
+                    <p><strong>Interest Rate:</strong> <span id="interestRateDisplay"></span>%</p>
+                    <p><strong>Loan Duration:</strong> <span id="loanDurationDisplay"></span> Months</p>
+                    <p><strong>Monthly Payment:</strong> $<span id="monthlyPaymentDisplay"></span></p>
+                    <p><strong>Outstanding Balance:</strong> $<span id="outstandingBalanceDisplay"></span></p>
+                </div>
+            </div>
+        </div>
+        <h2>Repayment Management</h2>
+        <div class="card">
+            <div class="card-header">
+                Repayment Schedule
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Repayment ID</th>
+                            <th>Application ID</th>
+                            <th>Due Date</th>
+                            <th>Amount Due</th>
+                            <th>Payment Date</th>
+                            <th>Payment Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="repaymentSchedule">
+                        <!-- Repayment schedule rows will be appended here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Make Payment Modal -->
+    <div class="modal fade" id="makePaymentModal" tabindex="-1" role="dialog" aria-labelledby="makePaymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="makePaymentModalLabel">Make Payment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="paymentForm">
+                        <input type="hidden" id="repaymentId"> <!-- Hidden field for repaymentId -->
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="text" class="form-control" id="amount" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentDate">Payment Date</label>
+                            <input type="date" class="form-control" id="paymentDate" disabled>
+                        </div>
+                        <center><button type="submit" class="btn btn-primary">Pay</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            // Sample data for repayment schedule
+            var repaymentData = [
+                { repaymentId: 1, applicationId: 101, dueDate: '2025-05-01', amountDue: 500, paymentDate: '', paymentStatus: 'PENDING' },
+                { repaymentId: 2, applicationId: 102, dueDate: '2025-06-01', amountDue: 600, paymentDate: '', paymentStatus: 'PENDING' }
+            ];
+
+            // Function to display repayment schedule
+            function displayRepaymentSchedule() {
+                var rows = '';
+                repaymentData.forEach(function(item) {
+                    var statusBadge = item.paymentStatus === 'PENDING' ? 'badge-danger' : 'badge-success';
+                    rows += `<tr>
+                                <td>${item.repaymentId}</td>
+                                <td>${item.applicationId}</td>
+                                <td>${item.dueDate}</td>
+                                <td>${item.amountDue}</td>
+                                <td>${item.paymentDate}</td>
+                                <td><span class="badge ${statusBadge}">${item.paymentStatus}</span></td>
+                                <td><button class="btn btn-info btn-sm make-payment" data-id="${item.repaymentId}" data-toggle="modal" data-target="#makePaymentModal">Make Payment</button></td>
+                            </tr>`;
+                });
+                $('#repaymentSchedule').html(rows);
+            }
+
+            // Display repayment schedule on page load
+            displayRepaymentSchedule();
+
+            // Handle payment form submission
+            $('#paymentForm').on('submit', function(event) {
+                event.preventDefault();
+                var repaymentId = $('#repaymentId').val(); // Get the repaymentId from the hidden input
+                var paymentDate = $('#paymentDate').val();
+
+                // Update repayment data
+                repaymentData.forEach(function(item) {
+                    if (item.repaymentId == repaymentId) {
+                        item.paymentDate = paymentDate;
+                        item.paymentStatus = 'COMPLETED';
+                    }
+                });
+
+                // Refresh repayment schedule
+                displayRepaymentSchedule();
+
+                // Update outstanding balance
+                var outstandingBalance = repaymentData.reduce(function(total, item) {
+                    return total + (item.paymentStatus === 'PENDING' ? item.amountDue : 0);
+                }, 0);
+                $('#outstandingBalance').text('Outstanding Balance: $' + outstandingBalance.toFixed(2));
+
+                // Close the modal
+                $('#makePaymentModal').modal('hide');
+            });
+
+            // Handle make payment button click
+            $(document).on('click', '.make-payment', function() {
+                var repaymentId = $(this).data('id');
+                var repayment = repaymentData.find(item => item.repaymentId == repaymentId); // Find the repayment data
+                var today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+
+                $('#repaymentId').val(repaymentId); // Set the repaymentId in the hidden input
+                $('#amount').val(repayment.amountDue); // Set the amount due
+                $('#paymentDate').val(today); // Set the current date
+                $('#makePaymentModal').modal('show'); // Show the modal
+            });
+        });
+    </script>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+
+                // Optional: Run any JavaScript that depends on the navbar being loaded
+                // For example, initializing event listeners within the navbar
+            });
+    </script>
+
+</body>
+
+</html>
+

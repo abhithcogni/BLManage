@@ -136,20 +136,9 @@
         <p id="noLogs" class="text-muted" style="display:none;">No audit logs available.</p>
     </div>
 
-    <hr>
-    <p><a href="/templates/sidebar.html" class="btn btn-outline-primary">Back to Admin Dashboard</a></p>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/js/admin_report.js"></script>
-    <script>
-        $(document).ready(function () {
-            // The navbar and sidebar are now part of the layout,
-            // so we don't need to load them here again.
-
-            // Highlight the current page in the sidebar
-            $('#sidebar a[href="admin_report.html"]').addClass('active');
-        });
-    </script>
+    <script src="~/js/admin_report.js"></script>
+   
 </body>
 </html>

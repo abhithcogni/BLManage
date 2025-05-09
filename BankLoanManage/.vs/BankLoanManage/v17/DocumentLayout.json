@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\views\\admin\\loanproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\views\\admin\\loanproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\views\\shared\\adminutility.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\views\\shared\\adminutility.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\views\\admin\\addloanproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\views\\admin\\addloanproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|c:\\bank loan management vs\\blmanage\\bankloanmanage\\bankloanmanage\\wwwroot\\js\\kycapproval.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{87770211-5F20-4DFE-ABCA-C3F2ADBEBAF7}|BankLoanManage\\BankLoanManage.csproj|solutionrelative:bankloanmanage\\wwwroot\\js\\kycapproval.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bankcontroller.cs",
-              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Controllers\\Bankcontroller.cs",
-              "RelativeDocumentMoniker": "BankLoanManage\\Controllers\\Bankcontroller.cs",
-              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Controllers\\Bankcontroller.cs",
-              "RelativeToolTip": "BankLoanManage\\Controllers\\Bankcontroller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T10:11:25.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoanProducts.cshtml",
-              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\LoanProducts.cshtml",
-              "RelativeDocumentMoniker": "BankLoanManage\\Views\\Admin\\LoanProducts.cshtml",
-              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\LoanProducts.cshtml",
-              "RelativeToolTip": "BankLoanManage\\Views\\Admin\\LoanProducts.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAHAAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BankLoanManage\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "BankLoanManage\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T10:06:29.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddLoanProduct.cshtml",
-              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\AddLoanProduct.cshtml",
-              "RelativeDocumentMoniker": "BankLoanManage\\Views\\Admin\\AddLoanProduct.cshtml",
-              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\AddLoanProduct.cshtml",
-              "RelativeToolTip": "BankLoanManage\\Views\\Admin\\AddLoanProduct.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T10:02:59.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminUtility.cshtml",
-              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Shared\\AdminUtility.cshtml",
-              "RelativeDocumentMoniker": "BankLoanManage\\Views\\Shared\\AdminUtility.cshtml",
-              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Shared\\AdminUtility.cshtml",
-              "RelativeToolTip": "BankLoanManage\\Views\\Shared\\AdminUtility.cshtml",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T09:15:12.903Z",
+              "WhenOpened": "2025-05-09T07:08:22.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminDashboard.cshtml",
-              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\AdminDashboard.cshtml",
-              "RelativeDocumentMoniker": "BankLoanManage\\Views\\Admin\\AdminDashboard.cshtml",
-              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\Views\\Admin\\AdminDashboard.cshtml",
-              "RelativeToolTip": "BankLoanManage\\Views\\Admin\\AdminDashboard.cshtml",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAUwJIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T08:57:52.76Z",
+              "Title": "kycApproval.js",
+              "DocumentMoniker": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\kycApproval.js",
+              "RelativeDocumentMoniker": "BankLoanManage\\wwwroot\\js\\kycApproval.js",
+              "ToolTip": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\kycApproval.js",
+              "RelativeToolTip": "BankLoanManage\\wwwroot\\js\\kycApproval.js",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-09T06:37:01.768Z",
               "EditorCaption": ""
             }
           ]

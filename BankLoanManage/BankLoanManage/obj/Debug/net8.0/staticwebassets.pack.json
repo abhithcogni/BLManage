@@ -13,8 +13,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\LoanAppScript.js",
+      "PackagePath": "staticwebassets\\js\\LoanAppScript.js"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\admin_report.js",
+      "PackagePath": "staticwebassets\\js\\admin_report.js"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\kycApproval.js",
+      "PackagePath": "staticwebassets\\js\\kycApproval.js"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\loanApproval.js",
+      "PackagePath": "staticwebassets\\js\\loanApproval.js"
+    },
+    {
       "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\status.js",
+      "PackagePath": "staticwebassets\\js\\status.js"
     },
     {
       "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\user_report.js",

@@ -16,5 +16,13 @@ namespace BankLoanManage.Controllers
         {
             return View();
         }
+        public IActionResult KYCApproval()
+        {
+            return View();
+        }
+        public IActionResult LoanApproval()
+        {
+            return View();
+        }
     }
 }
