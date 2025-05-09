@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ay5rcmHW9KbXqnYhI3RyoVB7ZfkNoyBJTvydfF1ym34=",
+  "Hash": "z0IURJrfy/fba2wAo8HUWHKNE08kUaAZ0+zt1f8bjes=",
   "Source": "BankLoanManage",
   "BasePath": "_content/BankLoanManage",
   "Mode": "Default",
@@ -99,6 +99,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\fonts\\TT Jenevers Trial Medium.otf",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "fonts/TT Jenevers Trial Medium#[.{fingerprint}]?.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mou5k2tqbg",
+      "Integrity": "aqljGjH5eqfeuil4mVUQqvM4/pR1loMqjX8tHuWxNpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\TT Jenevers Trial Medium.otf"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo.jpg",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/Logo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i9m9d2liqv",
+      "Integrity": "9h38STAMPLRC8kPiB5PwHARyLsPM7Z4HCGjgiGL6ZhE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo.jpg"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo1.png",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/Logo1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5qlm6z273i",
+      "Integrity": "g9bUfHhEz2GeFFak4SrGL66w3Skni2ys5w10s/cgc8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo1.png"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall.jpg",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/Logosmall#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6p8cjbe853",
+      "Integrity": "CpaKLCWMZTwrf/OjVc/86GOd002eSp9+hsIga+LWomU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logosmall.jpg"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall1.png",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/Logosmall1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "744feq1cwu",
+      "Integrity": "l0hIP7ZmcGsBo4W8ueQibiO+yYqCkMKURFIU1MqGZuc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logosmall1.png"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosupersmall.jpg",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/Logosupersmall#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vk2tlmz0e7",
+      "Integrity": "sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8+PhH2/NAY7ZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logosupersmall.jpg"
     },
     {
       "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\admin_report.js",
@@ -1771,6 +1897,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/TT Jenevers Trial Medium.mou5k2tqbg.otf",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\fonts\\TT Jenevers Trial Medium.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "217472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aqljGjH5eqfeuil4mVUQqvM4/pR1loMqjX8tHuWxNpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 12:15:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mou5k2tqbg"
+        },
+        {
+          "Name": "label",
+          "Value": "fonts/TT Jenevers Trial Medium.otf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aqljGjH5eqfeuil4mVUQqvM4/pR1loMqjX8tHuWxNpM="
+        }
+      ]
+    },
+    {
+      "Route": "fonts/TT Jenevers Trial Medium.otf",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\fonts\\TT Jenevers Trial Medium.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "217472"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aqljGjH5eqfeuil4mVUQqvM4/pR1loMqjX8tHuWxNpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 12:15:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aqljGjH5eqfeuil4mVUQqvM4/pR1loMqjX8tHuWxNpM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo.i9m9d2liqv.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9h38STAMPLRC8kPiB5PwHARyLsPM7Z4HCGjgiGL6ZhE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:44:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i9m9d2liqv"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9h38STAMPLRC8kPiB5PwHARyLsPM7Z4HCGjgiGL6ZhE="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296573"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9h38STAMPLRC8kPiB5PwHARyLsPM7Z4HCGjgiGL6ZhE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:44:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9h38STAMPLRC8kPiB5PwHARyLsPM7Z4HCGjgiGL6ZhE="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo1.5qlm6z273i.png",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g9bUfHhEz2GeFFak4SrGL66w3Skni2ys5w10s/cgc8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 12:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5qlm6z273i"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logo1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g9bUfHhEz2GeFFak4SrGL66w3Skni2ys5w10s/cgc8c="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logo1.png",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g9bUfHhEz2GeFFak4SrGL66w3Skni2ys5w10s/cgc8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 12:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g9bUfHhEz2GeFFak4SrGL66w3Skni2ys5w10s/cgc8c="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosmall.6p8cjbe853.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CpaKLCWMZTwrf/OjVc/86GOd002eSp9+hsIga+LWomU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:15:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6p8cjbe853"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logosmall.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CpaKLCWMZTwrf/OjVc/86GOd002eSp9+hsIga+LWomU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosmall.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CpaKLCWMZTwrf/OjVc/86GOd002eSp9+hsIga+LWomU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:15:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CpaKLCWMZTwrf/OjVc/86GOd002eSp9+hsIga+LWomU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosmall1.744feq1cwu.png",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0hIP7ZmcGsBo4W8ueQibiO+yYqCkMKURFIU1MqGZuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:22:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "744feq1cwu"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logosmall1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l0hIP7ZmcGsBo4W8ueQibiO+yYqCkMKURFIU1MqGZuc="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosmall1.png",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l0hIP7ZmcGsBo4W8ueQibiO+yYqCkMKURFIU1MqGZuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:22:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l0hIP7ZmcGsBo4W8ueQibiO+yYqCkMKURFIU1MqGZuc="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosupersmall.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosupersmall.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "242844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8+PhH2/NAY7ZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8+PhH2/NAY7ZA="
+        }
+      ]
+    },
+    {
+      "Route": "img/Logosupersmall.vk2tlmz0e7.jpg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosupersmall.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "242844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8+PhH2/NAY7ZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 09 May 2025 11:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk2tlmz0e7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Logosupersmall.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8+PhH2/NAY7ZA="
         }
       ]
     },

@@ -13,6 +13,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\fonts\\TT Jenevers Trial Medium.otf",
+      "PackagePath": "staticwebassets\\fonts\\TT Jenevers Trial Medium.otf"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo.jpg",
+      "PackagePath": "staticwebassets\\img\\Logo.jpg"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logo1.png",
+      "PackagePath": "staticwebassets\\img\\Logo1.png"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall.jpg",
+      "PackagePath": "staticwebassets\\img\\Logosmall.jpg"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosmall1.png",
+      "PackagePath": "staticwebassets\\img\\Logosmall1.png"
+    },
+    {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\Logosupersmall.jpg",
+      "PackagePath": "staticwebassets\\img\\Logosupersmall.jpg"
+    },
+    {
       "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\LoanAppScript.js",
       "PackagePath": "staticwebassets\\js\\LoanAppScript.js"
     },

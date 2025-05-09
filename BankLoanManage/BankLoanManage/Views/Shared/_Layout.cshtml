@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Phoenix Bank</title>
+    <title>@ViewData["Title"] - CredWise</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BankLoanManage.styles.css" asp-append-version="true" />
     <style>
@@ -43,13 +44,29 @@
         .navbar-nav .dropdown-menu {
             position: absolute; /* Ensures dropdown is positioned correctly */
         }
+
+        .tagesschrift-regular {
+            font-family: "Tagesschrift", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f4ece4;
+        }
+        
+
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body class="bg-light">
     <header>
         <nav class="navbar navbar-expand-lg  shadow" style="background-color: #161179;">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Phoenix Bank</a>
+                 <img class="rounded-circle bg-white" src="~/img/Logosmall.jpg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
+                <a class="navbar-brand text-white ms-2 tagesschrift-regular" href="@Url.Action("CustomerDashboard", "Customer")">CredWise</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -59,7 +76,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                            <a href="@Url.Action("LoanApplication", "Customer")" class="btn btn-outline-light me-2 text-white">Apply Loan</a>
+                            <a href="@Url.Action("LoanApplication", "Customer")"
+                               class="btn btn-outline-light me-2 apply-btn" 
+                               style="color: white;"
+                               onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.style.borderColor='white';"
+                               onmouseout="this.style.backgroundColor=''; this.style.color='white'; this.style.borderColor='';">
+                                Apply Loan
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link d-flex align-items-center" href="" id="profileDropdown" role="button"
@@ -93,6 +116,7 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
     <div class="container">
@@ -101,9 +125,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Phoenix Bank - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2025 CredWise, Inc</p>
+
+ 
+
+        <div class="me-2 text-muted">
+            Siruseri, Tamil Nadu 603103
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

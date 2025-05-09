@@ -47,15 +47,29 @@
 
         .navbar-nav .dropdown-menu {
             position: absolute; /* Ensures dropdown is positioned correctly */
+            .}
+
+        .tagesschrift-regular {
+            font-family: "Tagesschrift", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f4ece4;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body >
 
-    <nav class="navbar navbar-expand-lg bg-light shadow">
+    <nav class="navbar navbar-expand-lg  shadow" style="background-color: #161179;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="@Url.Action("Register", "Account")">Phoenix Bank</a>
+            <img class="rounded-circle bg-white" src="~/img/Logosmall.jpg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
+            <a class="navbar-brand tagesschrift-regular text-white me-2" href="@Url.Action("Register", "Account")">CredWise</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -72,9 +86,16 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Phoenix Bank - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2025 CredWise, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <
+        <div class="me-2 text-muted">
+            Siruseri, Tamil Nadu 603103
         </div>
     </footer>
 
