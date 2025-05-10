@@ -12,10 +12,15 @@
     <title>Loan Application Module</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4ece4;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container justify-content-center align-items-center min-vh-100">
+    <div class="container justify-content-center align-items-center min-vh-100 bg-light shadow mt-5 p-0">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <header class="my-4 text-center">
@@ -26,7 +31,7 @@
                         <p>
                             <h2>Apply for a Loan</h2>
                         </p>
-                        <form id="loanApplicationForm">
+                        <form id="loanApplicationForm" action="@Url.Action("LApplicationStatus", "Customer")">
                             <div class="form-group">
                                 <label for="customerId">Customer ID:</label>
                                 <input type="text" class="form-control" id="customerId" name="customerId" required>

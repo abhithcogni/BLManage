@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\img\\Logosupersmall.jpg"
     },
     {
+      "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\pencil-square.svg",
+      "PackagePath": "staticwebassets\\img\\pencil-square.svg"
+    },
+    {
       "Id": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\LoanAppScript.js",
       "PackagePath": "staticwebassets\\js\\LoanAppScript.js"
     },

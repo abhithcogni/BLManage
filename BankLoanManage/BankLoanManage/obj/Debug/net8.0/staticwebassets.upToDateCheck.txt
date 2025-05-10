@@ -6,6 +6,7 @@ wwwroot\img\Logo1.png
 wwwroot\img\Logosmall.jpg
 wwwroot\img\Logosmall1.png
 wwwroot\img\Logosupersmall.jpg
+wwwroot\img\pencil-square.svg
 wwwroot\js\admin_report.js
 wwwroot\js\kycApproval.js
 wwwroot\js\loanApproval.js

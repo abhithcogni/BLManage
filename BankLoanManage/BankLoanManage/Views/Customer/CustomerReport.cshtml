@@ -53,92 +53,100 @@
     }
 </style>
 
-<div class="container mt-5">
-    <h2 class="mb-4">Your Loan Reports</h2>
+<body>
+    <div class="container mt-5">
+        <div class="bg-light shadow m-2 pb-3 " >
+            <h2 class="mb-4 bg-dark text-white p-1">
+                <div class="m-2">
+                    Your Loan Reports
+                </div>
+            </h2>
 
-    <div class="report-section">
-        <h5 class="report-title">Loan Summary</h5>
-        <p><strong>Total Loans Applied:</strong> <span id="totalLoansApplied"></span></p>
-        <p><strong>Total Loans Approved:</strong> <span id="totalLoansApproved"></span></p>
-        <p><strong>Total Outstanding Balance:</strong> <span id="totalOutstandingBalance"></span></p>
-    </div>
-
-    <div class="report-section">
-        <h5 class="report-title">Repayment History</h5>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Loan Application ID</th>
-                    <th>Due Date</th>
-                    <th>Amount Due</th>
-                    <th>Payment Date</th>
-                    <th>Payment Status</th>
-                </tr>
-            </thead>
-            <tbody id="repaymentHistoryTableBody">
-            </tbody>
-        </table>
-        <p id="noRepayments" class="text-muted" style="display:none;">No repayment history available.</p>
-    </div>
-
-    <div class="report-section">
-        <h5 class="report-title">Loan Details</h5>
-        <form id="loanDetailsForm">
-            <div class="form-group">
-                <label for="loanApplicationId">Select Loan Application ID:</label>
-                <select class="form-control" id="loanApplicationId">
-                    <option value="">-- Select --</option>
-                </select>
+            <div class="report-section m-3">
+                <h5 class="report-title">Loan Summary</h5>
+                <p><strong>Total Loans Applied:</strong> <span id="totalLoansApplied"></span></p>
+                <p><strong>Total Loans Approved:</strong> <span id="totalLoansApproved"></span></p>
+                <p><strong>Total Outstanding Balance:</strong> <span id="totalOutstandingBalance"></span></p>
             </div>
-        </form>
-        <div id="loanDetails" style="margin-top: 15px;">
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <div class="report-section">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Loan Status Chart</h5>
-                        <div class="chart-container">
-                            <canvas id="loanStatusChart"></canvas>
+        <div class="report-section">
+            <h5 class="report-title">Repayment History</h5>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Loan Application ID</th>
+                        <th>Due Date</th>
+                        <th>Amount Due</th>
+                        <th>Payment Date</th>
+                        <th>Payment Status</th>
+                    </tr>
+                </thead>
+                <tbody id="repaymentHistoryTableBody">
+                </tbody>
+            </table>
+            <p id="noRepayments" class="text-muted" style="display:none;">No repayment history available.</p>
+        </div>
+
+        <div class="report-section">
+            <h5 class="report-title">Loan Details</h5>
+            <form id="loanDetailsForm">
+                <div class="form-group">
+                    <label for="loanApplicationId">Select Loan Application ID:</label>
+                    <select class="form-control" id="loanApplicationId">
+                        <option value="">-- Select --</option>
+                    </select>
+                </div>
+            </form>
+            <div id="loanDetails" style="margin-top: 15px;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="report-section">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Loan Status Chart</h5>
+                            <div class="chart-container">
+                                <canvas id="loanStatusChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="report-section">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Repayment Status Chart</h5>
+                            <div class="chart-container">
+                                <canvas id="repaymentStatusChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="report-section">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Outstanding Balance Over Time</h5>
+                            <div class="chart-container">
+                                <canvas id="outstandingBalanceChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="report-section">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Repayment Status Chart</h5>
-                        <div class="chart-container">
-                            <canvas id="repaymentStatusChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="report-section">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Outstanding Balance Over Time</h5>
-                        <div class="chart-container">
-                            <canvas id="outstandingBalanceChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="scrollButtons">
-        <button id="scrollUpButton">↑</button>
-        <button id="scrollDownButton">↓</button>
+        <div id="scrollButtons">
+            <button id="scrollUpButton">↑</button>
+            <button id="scrollDownButton">↓</button>
+        </div>
     </div>
-</div>
+</body>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

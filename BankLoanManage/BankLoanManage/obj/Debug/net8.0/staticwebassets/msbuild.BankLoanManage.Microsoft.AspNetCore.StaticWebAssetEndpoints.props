@@ -108,6 +108,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vk2tlmz0e7"},{"Name":"integrity","Value":"sha256-sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8\u002BPhH2/NAY7ZA="},{"Name":"label","Value":"_content/BankLoanManage/img/Logosupersmall.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"242844"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sdBNtrNzk2uJ0tT1z5PhZcX9rJ0D8x8\u002BPhH2/NAY7ZA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 11:58:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanManage/img/pencil-square.lc3ub6tw5m.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\pencil-square.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lc3ub6tw5m"},{"Name":"integrity","Value":"sha256-df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI="},{"Name":"label","Value":"_content/BankLoanManage/img/pencil-square.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"575"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 04:48:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanManage/img/pencil-square.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\pencil-square.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"575"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 04:48:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/admin_report.fqroztfxja.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\admin_report.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -124,13 +136,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\kycApproval.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 06:42:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 08:30:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/kycApproval.z9j74rblnd.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\kycApproval.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z9j74rblnd"},{"Name":"integrity","Value":"sha256-qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE="},{"Name":"label","Value":"_content/BankLoanManage/js/kycApproval.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 06:42:20 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4085"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qeKYSC47c46STEkjIN5i8VB579AxCeNpkis\u002BlMQtcpE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 08:30:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/loanApproval.1c9hnysopu.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loanApproval.js'))</AssetFile>
@@ -148,13 +160,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoanAppScript.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 03:17:05 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 09:23:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/LoanAppScript.pv8cif0lsh.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoanAppScript.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pv8cif0lsh"},{"Name":"integrity","Value":"sha256-Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w="},{"Name":"label","Value":"_content/BankLoanManage/js/LoanAppScript.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 08 May 2025 03:17:05 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 09:23:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

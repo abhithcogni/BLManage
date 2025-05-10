@@ -1,108 +1,122 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿    @*
+           For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+       *@
+    @{
+    }
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Custom styling for the profile dropdown card */
-        .profile-dropdown-card {
-            width: 280px; /* Adjust width as needed */
-            border-radius: 0.5rem; /* Softer corners */
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Enhanced shadow */
-        }
-
-            .profile-dropdown-card .card-body {
-                padding: 1.5rem; /* More padding */
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Management</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            /* Custom styling for the profile dropdown card */
+            .profile-dropdown-card {
+                width: 280px; /* Adjust width as needed */
+                border-radius: 0.5rem; /* Softer corners */
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Enhanced shadow */
             }
 
-            .profile-dropdown-card .profile-avatar {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                margin-right: 15px;
-                object-fit: cover; /* Ensures the image covers the area without distortion */
+                .profile-dropdown-card .card-body {
+                    padding: 1.5rem; /* More padding */
+                }
+
+                .profile-dropdown-card .profile-avatar {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    object-fit: cover; /* Ensures the image covers the area without distortion */
+                }
+
+                .profile-dropdown-card .user-info h6 {
+                    margin-bottom: 0.25rem;
+                    font-weight: 600;
+                }
+
+                .profile-dropdown-card .user-info p {
+                    font-size: 0.875rem;
+                    color: #6c757d; /* Bootstrap's secondary text color */
+                    margin-bottom: 1rem;
+                }
+
+            .navbar-nav .dropdown-menu {
+                position: absolute; /* Ensures dropdown is positioned correctly */
             }
 
-            .profile-dropdown-card .user-info h6 {
-                margin-bottom: 0.25rem;
-                font-weight: 600;
+            .tagesschrift-regular {
+                font-family: "Tagesschrift", system-ui;
+                font-weight: 400;
+                font-style: normal;
             }
 
-            .profile-dropdown-card .user-info p {
-                font-size: 0.875rem;
-                color: #6c757d; /* Bootstrap's secondary text color */
-                margin-bottom: 1rem;
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%; /* Ensure the body takes the full height of the viewport */
             }
 
-        .navbar-nav .dropdown-menu {
-            position: absolute; /* Ensures dropdown is positioned correctly */
-            .}
+            body {
+                display: flex;
+                flex-direction: column; /* Arrange content vertically */
+            }
 
-        .tagesschrift-regular {
-            font-family: "Tagesschrift", system-ui;
-            font-weight: 400;
-            font-style: normal;
-        }
+            main {
+                flex: 1; /* Push the footer to the bottom */
+            }
 
-        body {
-            background-color: #f4ece4;
-        }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
-</head>
+            footer {
+                margin: 0; /* Remove any default margin */
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    </head>
 
-<body >
+    <body>
 
-    <nav class="navbar navbar-expand-lg  shadow" style="background-color: #161179;">
-        <div class="container-fluid">
-            <img class="rounded-circle bg-white" src="~/img/Logosmall.jpg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
-            <a class="navbar-brand tagesschrift-regular text-white me-2" href="@Url.Action("Register", "Account")">CredWise</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg  shadow" style="background-color: #161179;">
+            <div class="container-fluid">
+                <img class="rounded-circle bg-white" src="~/img/Logosmall.jpg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
+                <a class="navbar-brand tagesschrift-regular text-white me-2" href="@Url.Action("Register", "Account")">CredWise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
 
-
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
-    </nav>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-0 border-top bg-light">
+        <p class="col-md-4 mb-0 text-muted">
+            <a class="navbar-brand text-muted ms-2  tagesschrift-regular" href="@Url.Action("CustomerDashboard", "Customer")">CredWise</a>
+            © 2025
+        </p>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">© 2025 CredWise, Inc</p>
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
 
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
+            <div class="me-2 text-muted">
+                Siruseri, Tamil Nadu 603103
+            </div>
+        </footer>
 
-        <
-        <div class="me-2 text-muted">
-            Siruseri, Tamil Nadu 603103
-        </div>
-    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
 
-
-</body>
-
-</html>
+    </html>

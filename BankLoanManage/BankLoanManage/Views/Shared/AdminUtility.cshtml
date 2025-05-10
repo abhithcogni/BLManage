@@ -62,37 +62,57 @@
         body {
             background-color: #f4ece4;
         }
+
+        .tagesschrift-regular {
+            font-family: "Tagesschrift", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #161179;">
+        <nav class="navbar navbar-expand-lg  shadow" style="background-color: #161179;">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">CredWise</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="rounded-circle bg-white" src="~/img/Logosmall.jpg" viewBox="0 0 24 24" width="32" height="32" fill="none" style="border: 1px solid #ccc; padding:2px;">
+                <a class="navbar-brand tagesschrift-regular text-white me-2" href="@Url.Action("AdminDashBoard", "Admin")">CredWise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-    </div>
-    </nav>
+        </nav>
+
     <div class="d-flex-page">
         <div id="sidebar" class="p-3">
-            <h5 class="mb-3">Admin Menu</h5>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("AdminDashBoard", "Admin")">Dashboard</a>
+                    <h5><a class="nav-link" href="@Url.Action("AdminDashBoard", "Admin")">Dashboard</a></h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("KYCApproval", "Admin")">KYC Approval</a>
+                    <h5>
+                        <a class="nav-link" href="@Url.Action("KYCApproval", "Admin")">KYC Approval</a>
+                    </h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("LoanApproval", "Admin")">Loan Approval</a>
+                    <h5>
+                        <a class="nav-link" href="@Url.Action("LoanApproval", "Admin")">Loan Approval</a>
+                    </h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="@Url.Action("AddLoanProduct", "Admin")">Add Loan Product</a>
+                    <h5>
+                        <a class="nav-link active" href="@Url.Action("AddLoanProduct", "Admin")">Add Loan Product</a>
+                    </h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("LoanProducts", "Admin")">Loan Products</a>
+                   <h5>
+                        <a class="nav-link" href="@Url.Action("LoanProducts", "Admin")">Loan Products</a>
+                    </h5>
                 </li>
             </ul>
         </div>
@@ -101,8 +121,11 @@
         </div>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">© 2025 CredWise, Inc</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-light border-top">
+            <p class="col-md-4 mb-0 text-muted">
+                <a class="navbar-brand text-muted ms-2  tagesschrift-regular" href="@Url.Action("CustomerDashboard", "Customer")">CredWise</a>
+                © 2025
+            </p>
 
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>

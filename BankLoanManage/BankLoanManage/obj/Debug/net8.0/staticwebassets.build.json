@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z0IURJrfy/fba2wAo8HUWHKNE08kUaAZ0+zt1f8bjes=",
+  "Hash": "fdhku7QHCsWChcS2pmDVDAkiA432cRPt06hD/8iH/dk=",
   "Source": "BankLoanManage",
   "BasePath": "_content/BankLoanManage",
   "Mode": "Default",
@@ -225,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Logosupersmall.jpg"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\pencil-square.svg",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "img/pencil-square#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lc3ub6tw5m",
+      "Integrity": "df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pencil-square.svg"
     },
     {
       "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\admin_report.js",
@@ -2393,6 +2414,88 @@
       ]
     },
     {
+      "Route": "img/pencil-square.lc3ub6tw5m.svg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\pencil-square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:48:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lc3ub6tw5m"
+        },
+        {
+          "Name": "label",
+          "Value": "img/pencil-square.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI="
+        }
+      ]
+    },
+    {
+      "Route": "img/pencil-square.svg",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\img\\pencil-square.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:48:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI="
+        }
+      ]
+    },
+    {
       "Route": "js/admin_report.fqroztfxja.js",
       "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\admin_report.js",
       "Selectors": [],
@@ -2497,7 +2600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 06:42:20 GMT"
+          "Value": "Sat, 10 May 2025 08:30:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2534,7 +2637,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 06:42:20 GMT"
+          "Value": "Sat, 10 May 2025 08:30:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2661,7 +2764,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 03:17:05 GMT"
+          "Value": "Sat, 10 May 2025 09:23:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2698,7 +2801,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 03:17:05 GMT"
+          "Value": "Sat, 10 May 2025 09:23:42 GMT"
         },
         {
           "Name": "Cache-Control",
