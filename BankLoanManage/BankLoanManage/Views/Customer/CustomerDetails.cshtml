@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            border-radius: 0.5rem;
+        }
+
+        .card-header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            border-bottom: none;
+            border-radius: 0.5rem 0.5rem 0 0;
+            padding: 1.5rem 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .list-group-item {
+            border-left: none;
+            border-right: none;
+            border-bottom:none;
+            padding: 1rem 1.5rem;
+        }
+
+            .list-group-item:first-child {
+                border-top: none;
+            }
+
+            .list-group-item strong {
+                font-weight: bold;
+                color: #495057;
+                margin-right: 10px;
+            }
+            body{
+            background-color: #f4ece4;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card rounded">
+                    <div class="card-header">
+                        Customer Information
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Name:</strong> John Doe</li>
+                        <li class="list-group-item"><strong>Email:</strong> john.doe@example.com</li>
+                        <li class="list-group-item"><strong>Phone:</strong> +91 9876543210</li>
+                        <li class="list-group-item"><strong>Address:</strong> 123 Main Street, Anytown, India</li>
+                        <li class="list-group-item"><strong>Account Number:</strong> XXXX-YYYY-ZZZZ-AAAA</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
