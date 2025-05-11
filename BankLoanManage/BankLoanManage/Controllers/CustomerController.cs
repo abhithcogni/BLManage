@@ -29,5 +29,9 @@ namespace BankLoanManage.Controllers
         {
             return View();
         }
+        public IActionResult CustomerDetails()
+        {
+            return View();
+        }
     }
 }

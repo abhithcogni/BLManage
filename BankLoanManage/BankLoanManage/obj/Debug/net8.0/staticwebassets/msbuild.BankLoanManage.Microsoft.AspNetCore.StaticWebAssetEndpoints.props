@@ -168,6 +168,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pv8cif0lsh"},{"Name":"integrity","Value":"sha256-Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w="},{"Name":"label","Value":"_content/BankLoanManage/js/LoanAppScript.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2173"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C\u002Bcf5vx47y8w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 10 May 2025 09:23:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/popper.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\popper.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2XC4wL3tHtchF7v6s\u002Bnm9Yj/jLT2b/t9tHQCqA0ibkU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24669"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222XC4wL3tHtchF7v6s\u002Bnm9Yj/jLT2b/t9tHQCqA0ibkU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 15:04:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/popper.tb38ec77vk.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\popper.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tb38ec77vk"},{"Name":"integrity","Value":"sha256-2XC4wL3tHtchF7v6s\u002Bnm9Yj/jLT2b/t9tHQCqA0ibkU="},{"Name":"label","Value":"_content/BankLoanManage/js/popper.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24669"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222XC4wL3tHtchF7v6s\u002Bnm9Yj/jLT2b/t9tHQCqA0ibkU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 11 May 2025 15:04:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BankLoanManage/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

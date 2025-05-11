@@ -1,6 +1,9 @@
 ﻿@{
+
     ViewBag.Title = "Login Customer";
+
     Layout = "~/Views/Shared/RegisterNav.cshtml";
+
 }
 
 <!DOCTYPE html>
@@ -12,31 +15,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
+
         body {
             background-color: #f4ece4;
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* min-height: 100vh; /* Ensure the body takes at least the full viewport height */ */
-            margin: 0; /* Reset default body margin */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body is at least viewport height */
+
+            box-sizing: border-box;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f4ece4; /* Match body background */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Ensure it's on top */
+
+            opacity: 1;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+            .loading-overlay.hidden {
+                opacity: 0;
+                pointer-events: none; /* Allow interaction with content below */
+            }
+
+        .centered-logo {
+            max-width: 500px; /* Increased maximum width */
+
+            opacity: 0;
+            transform: scale(2); /* Increased initial scale */
+
+            transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+        }
+
+        .loading .centered-logo {
+            transform: scale(1);
+            opacity: 1;
         }
 
         .container {
-            flex: 1; /* Allow the container to grow and take available vertical space */
+            flex: 1 0 auto; /* Allow container to grow and take available space */
+
             display: flex;
             align-items: center; /* Vertically align items in the container */
+
             justify-content: center; /* Horizontally align items in the container */
+
+            box-sizing: border-box;
         }
 
-
-        /* Ensure the card is not stretched to the full height */
-       
-        
-
-       
+        /* Footer styles are in the layout */
     </style>
 </head>
 
-<body>
+<body class="loading">
+
+    <div class="loading-overlay">
+        <img src="~/img/Logo.jpg" class="centered-logo rounded-circle" alt="Logo">
+    </div>
 
     <div class="container">
         <div class="row align-items-center">
@@ -71,21 +117,24 @@
         </div>
     </div>
 
-    @* <footer class=""> *@
-    @*     <div class="d-flex flex-wrap justify-content-between align-items-center py-3 m-0 border-top bg-light"> *@
-    @*         <p class="col-md-4 mb-0 text-muted">© 2025 CredWise, Inc</p> *@
-
-    @*         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto link-dark text-decoration-none"> *@
-    @*             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> *@
-    @*         </a> *@
-
-    @*         <div class="me-2 text-muted"> *@
-    @*             Siruseri, Tamil Nadu 603103 *@
-    @*         </div> *@
-    @*     </div> *@
-    @* </footer> *@
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            // Delay the removal of the loading overlay
+
+            setTimeout(function() {
+
+                $('.loading-overlay').addClass('hidden');
+
+                $('body').removeClass('loading');
+
+            }, 800); // Adjust the duration as needed
+
+        });
+    </script>
 
 </body>
 

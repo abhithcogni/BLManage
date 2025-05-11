@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fdhku7QHCsWChcS2pmDVDAkiA432cRPt06hD/8iH/dk=",
+  "Hash": "NbK+k9tyaZfFQFdGi2dgLVlu/BoRRPPP26Boy1w97oA=",
   "Source": "BankLoanManage",
   "BasePath": "_content/BankLoanManage",
   "Mode": "Default",
@@ -330,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoanAppScript.js"
+    },
+    {
+      "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\popper.js",
+      "SourceId": "BankLoanManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\",
+      "BasePath": "_content/BankLoanManage",
+      "RelativePath": "js/popper#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tb38ec77vk",
+      "Integrity": "2XC4wL3tHtchF7v6s+nm9Yj/jLT2b/t9tHQCqA0ibkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popper.js"
     },
     {
       "Identity": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\site.js",
@@ -2820,6 +2841,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Cxpv6yAjKsLZ0cuBrC5PWfw5WvsiCE1C+cf5vx47y8w="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.js",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\popper.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24669"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2XC4wL3tHtchF7v6s+nm9Yj/jLT2b/t9tHQCqA0ibkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2XC4wL3tHtchF7v6s+nm9Yj/jLT2b/t9tHQCqA0ibkU="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.tb38ec77vk.js",
+      "AssetFile": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\wwwroot\\js\\popper.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24669"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2XC4wL3tHtchF7v6s+nm9Yj/jLT2b/t9tHQCqA0ibkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 15:04:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tb38ec77vk"
+        },
+        {
+          "Name": "label",
+          "Value": "js/popper.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2XC4wL3tHtchF7v6s+nm9Yj/jLT2b/t9tHQCqA0ibkU="
         }
       ]
     },
