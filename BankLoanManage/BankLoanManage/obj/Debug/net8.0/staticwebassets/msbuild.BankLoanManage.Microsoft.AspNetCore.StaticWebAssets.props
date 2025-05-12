@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lc3ub6tw5m</Fingerprint>
-      <Integrity>df9IJpWnIUxQIvkNFlGq3oBLkir081U6QZL8go1Z3ZI=</Integrity>
+      <Fingerprint>jf0jabmxgv</Fingerprint>
+      <Integrity>734wdtapA0wZuye9DCV+cJaSvevCbY2diml43jdfqyA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\pencil-square.svg'))</OriginalItemSpec>
