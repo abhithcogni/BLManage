@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "XcQQkt13J0c=",
   "success": true,
   "projectFilePath": "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj",
+=======
+  "dgSpecHash": "6DCfk/K4l+c=",
+  "success": true,
+  "projectFilePath": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }
