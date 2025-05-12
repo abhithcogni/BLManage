@@ -3,39 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@* Remove the <html>, <head>, and <body> tags *@
 <style>
-    /* Ensure scroll buttons are positioned relative to the viewport */
-    #scrollButtons {
-        position: fixed; /* Fix the buttons to the viewport */
-        bottom: 70px; /* Adjusted to account for fixed height */
-        right: 20px;
-        z-index: 1050; /* Ensure they're above other elements */
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #scrollUpButton,
-    #scrollDownButton {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        /* Add styling for the buttons */
-        background-color: #007bff; /* Bootstrap's primary color */
-        color: white;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-        transition: background-color 0.3s ease; /* Smooth transition */
-    }
-
-        #scrollUpButton:hover,
-        #scrollDownButton:hover {
-            background-color: #0056b3; /* Darker shade on hover */
-        }
-
-    /* Ensure that main content is above the footer. */
     main {
         position: relative; /* Declare main as relative, so z-index works on its children*/
         z-index: 1;
@@ -55,7 +23,7 @@
 
 <body>
     <div class="container mt-5">
-        <div class="bg-light shadow m-2 pb-3 " >
+        <div class="bg-light shadow m-2 pb-3 ">
             <h2 class="mb-4 bg-dark text-white p-1">
                 <div class="m-2">
                     Your Loan Reports
@@ -141,10 +109,6 @@
             </div>
         </div>
 
-        <div id="scrollButtons">
-            <button id="scrollUpButton">↑</button>
-            <button id="scrollDownButton">↓</button>
-        </div>
     </div>
 </body>
 
