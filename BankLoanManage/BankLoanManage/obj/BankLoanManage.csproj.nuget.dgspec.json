@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj": {}
-  },
-  "projects": {
-    "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj",
-        "projectName": "BankLoanManage",
-        "projectPath": "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj",
-        "packagesPath": "C:\\Users\\2406734\\.nuget\\packages\\",
-        "outputPath": "C:\\Bank Loan Project\\BLManage\\BankLoanManage\\BankLoanManage\\obj\\",
-=======
     "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj": {}
   },
   "projects": {
@@ -25,17 +12,12 @@
         "projectPath": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\BankLoanManage.csproj",
         "packagesPath": "C:\\Users\\2406667\\.nuget\\packages\\",
         "outputPath": "C:\\Bank Loan Management VS\\BLManage\\BankLoanManage\\BankLoanManage\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< Updated upstream
-          "C:\\Users\\2406734\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\2406667\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
