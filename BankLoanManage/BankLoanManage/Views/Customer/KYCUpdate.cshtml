@@ -180,50 +180,7 @@
         </div>
     </div>
 
-    
-    <script>
-        // Example: Script to change KYC status (for demonstration)
-        // In a real application, this would be driven by backend data.
-        $(document).ready(function() {
-            // Simulate fetching KYC status
-            setTimeout(function() {
-                // const kycStatus = "Approved"; // or "Pending" or "Not Approved"
-                // const remarks = "All documents verified successfully.";
 
-                const kycStatus = "Pending";
-                const remarks = "Awaiting review of submitted documents.";
-
-                // const kycStatus = "Not Approved";
-                // const remarks = "ID document is unclear. Please re-upload.";
-
-                const statusBadge = $('.badge');
-                const remarksTextarea = $('#adminRemarks');
-
-                statusBadge.removeClass('bg-warning bg-success bg-danger text-dark'); // Remove all classes first
-
-                if (kycStatus === "Approved") {
-                    statusBadge.addClass('bg-success').text('Approved');
-                    remarksTextarea.val(remarks);
-                } else if (kycStatus === "Not Approved") {
-                    statusBadge.addClass('bg-danger').text('Not Approved');
-                    remarksTextarea.val(remarks);
-                } else { // Pending
-                    statusBadge.addClass('bg-warning text-dark').text('Pending');
-                    remarksTextarea.val(remarks);
-                }
-            }, 2000); // Simulate a delay
-        });
-    </script>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-
-                // Optional: Run any JavaScript that depends on the navbar being loaded
-                // For example, initializing event listeners within the navbar
-            });
-    </script>
 </body>
 
 </html>

@@ -40,7 +40,7 @@
                         <h4>Update Customer Details</h4>
                     </div>
                     <div class="card-body p-4">
-                        <form id="updateCustomerForm">
+                        <form id="updateCustomerForm" action="@Url.Action("CustomerDetails","Customer")">
                             <div class="mb-3 form-floating">
                                 <input type="text" class="form-control" id="floatingName" name="name"
                                        placeholder="Name" value="John Doe" required>
@@ -71,17 +71,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-
-                // Optional: Run any JavaScript that depends on the navbar being loaded
-                // For example, initializing event listeners within the navbar
-            });
-    </script>
 </body>
 
 </html>

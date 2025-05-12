@@ -7,11 +7,12 @@ wwwroot\img\Logosmall.jpg
 wwwroot\img\Logosmall1.png
 wwwroot\img\Logosupersmall.jpg
 wwwroot\img\pencil-square.svg
+wwwroot\js\addLoanProduct.js
 wwwroot\js\admin_report.js
 wwwroot\js\kycApproval.js
 wwwroot\js\loanApproval.js
 wwwroot\js\LoanAppScript.js
-wwwroot\js\LoanProducts.js
+wwwroot\js\loanProducts.js
 wwwroot\js\popper.js
 wwwroot\js\site.js
 wwwroot\js\status.js
